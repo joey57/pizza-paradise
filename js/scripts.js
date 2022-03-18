@@ -67,6 +67,13 @@ $(document).ready(function(){
     $("#pizza-details").append("<ul><li>" + pizzaDetails + "</ul></li>");
 
   });
+  $("#submit-pizza").click(function() {
+    $("#deliver").toggle();
+  });
+
+  $("#checkout-btn").click(function() {
+    $("#order-details").toggle();
+  });
 
 
 })
