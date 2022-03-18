@@ -30,7 +30,17 @@ p{
     margin-right: 20px;
   }
 }
-
+#about-us{
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 40px;
+  font-family: "Faster One", cursive;
+  margin-top: 10%;
+}
+#about{
+  text-align: center;
+  font-family: sans-serif;
+}
 
 .card {
   width: 80%;
