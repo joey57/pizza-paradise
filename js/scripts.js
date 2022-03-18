@@ -51,4 +51,22 @@ $(document).ready(function(){
     }
     return cartTotalPrice;
   };
+  $(".btn.check-out").click(function(){  
+  });
+  $("form#custom-pizza").submit(function(event){
+    event.prevenDefault();
+    var size = $("select#size").val();
+    var crust = $("select#crust").val();
+    var toppings = $("select#toppings").val();
+
+    var newPizzaOrder = new Order(size, crust, toppings);
+    newPizzaOrder.pizzaCost();
+    totalPriceArray.push(newPizzaOrder.pizzaPrice);
+
+    $("#final-cost").text(newPizzaOrder.finalCost());
+    $("#pizza-details").append("<ul><li>" + pizzaDetails + "</ul></li>");
+
+  });
+
+
 })
