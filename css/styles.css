@@ -101,3 +101,22 @@ h2 {
 .page-header{
   text-align: center;
 }
+#footer p{
+  text-align: center;
+}
+#footer .section-a{
+  background-color:black;
+  padding: 0%;
+  margin: 0%;
+}
+.section-a i{
+  color: #fff;
+  padding: 1%;
+  margin: 1%;
+  border-radius: 10px;
+}
+.section-b p{
+  text-transform: uppercase;
+  text-align: center;
+}
+
