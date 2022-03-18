@@ -74,6 +74,11 @@ $(document).ready(function(){
   $("#checkout-btn").click(function() {
     $("#order-details").toggle();
   });
-
-
-})
+  $("form#address-form").submit(function(event){
+    $(".address-form").toggle();
+    event.prevenDefault();
+    var address = $("input#location").val();
+    var newAddress = new Address(address);
+    $("#delivery-option").text("Your pizza will be delivered to:" + newAddress.deliveryAddress);
+  });
+});
