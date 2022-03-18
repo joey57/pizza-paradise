@@ -54,7 +54,7 @@ $(document).ready(function(){
   $(".btn.check-out").click(function(){  
   });
   $("form#custom-pizza").submit(function(event){
-    event.prevenDefault();
+    event.preventDefault();
     var size = $("select#size").val();
     var crust = $("select#crust").val();
     var toppings = $("select#toppings").val();
@@ -76,7 +76,7 @@ $(document).ready(function(){
   });
   $("form#address-form").submit(function(event){
     $(".address-form").toggle();
-    event.prevenDefault();
+    event.preventDefault();
     var address = $("input#location").val();
     var newAddress = new Address(address);
     $("#delivery-option").text("Your pizza will be delivered to:" + newAddress.deliveryAddress);
