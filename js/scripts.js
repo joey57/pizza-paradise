@@ -58,7 +58,7 @@ $(document).ready(function(){
     var size = $("select#size").val();
     var crust = $("select#crust").val();
     var toppings = $("select#toppings").val();
-
+    var pizzaDetails = new Order(size + " - " + crust + " - " + toppings);
     var newPizzaOrder = new Order(size, crust, toppings);
     newPizzaOrder.pizzaCost();
     totalPriceArray.push(newPizzaOrder.pizzaPrice);
