@@ -4,7 +4,7 @@ Joyce Njoroge
 ## Description
 This is a web application for a pizza place called pizza paradise, the appplication allows the user to make and order where they can choose toppings, size and crust and number of pizzas they would like to order.
 ## Preview
-![preview!](images/sn1.png)
+![preview!](images/sn4.png)
 ![preview!](images/sn2.png)
 ![preview!](images/sn3.png)
 
