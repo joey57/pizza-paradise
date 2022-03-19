@@ -81,4 +81,21 @@ $(document).ready(function(){
     var newAddress = new Address(address);
     $("#delivery-option").text("Your pizza will be delivered to:" + newAddress.deliveryAddress);
   });
+
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+});
 });
